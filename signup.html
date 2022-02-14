@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="formStyle.css">
+    <!-- link for social icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="index.js"></script>
+ </head>
+
+<body>
+      
+    <div class="container">
+        <div class="formWraper">
+            <div class="formDiv">
+                <h2>Create Account</h2>
+                <p class="text"> Sign Up with Social Media</p>
+
+                <div class="socialbtn" style="display: flex;justify-content: center;display: flex;justify-content: center;margin-bottom: 20px;">
+                    <div class="facebook icon"><i class="fab fa-facebook-f"></i></div>
+                    <div class="twitter icon"><i class="fab fa-twitter"></i></div>
+                    <div class="instagram icon"><i class="fab fa-instagram"></i></i></div>
+                </div>
+                 
+                <hr>
+                <div class="orDiv">Or</div>
+                <p class="text">Sign Up with Email Address</p>
+
+            <form action="" name="myform" onsubmit="return validate()">
+
+                <div class="formGroup">
+                    <i class="far fa-user"></i>
+                    <input type="text" name="username" id="username" placeholder="Username" required="required"
+                    onfocus="this.value = '';">
+                </div>
+
+                <div class="formGroup">
+                    <i class="far fa-lock"></i>
+                    <input type="password" name="userpassword" id="password" placeholder="Password" required="required"
+                    onfocus="this.value = '';">
+                </div>
+
+                <div class="formGroup">
+                    <i class="fas fa-lock"></i>
+                    <input type="text" name="mobile" id="mobile" placeholder="Mobile Number" required="required"
+                    onfocus="this.value = '';">
+                </div>
+
+                <div class="formGroup">
+                    <i class="fas fa-lock"></i>
+                    <input type="text" name="email" id="email" placeholder="Email Address" required="required" onfocus="this.value = '';">
+                </div>
+
+                <div class="checkBox">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <span class="text">I Agree with Term & Conditions.</span>
+                </div>
+                <input type="submit" value="Register">
+            </form> 
+        </div>
+    </div>
+ </body>
+ </html>
